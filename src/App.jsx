@@ -10,7 +10,7 @@ function App() {
         <nav className="menu">
           <ul className="menu-list">
             <li className="menu-list">
-              <img src="src/assets/home.svg" alt="Home" className="menu-list__icon-active menu-list_home" href="#" />
+              <img src="../src/assets/home.svg" alt="Home" className="menu-list__icon-active menu-list_home" href="#" />
             </li>
             <li className="menu-list">
               <img src="src/assets/posts.svg" alt="Posts" className="menu-list__icon menu-list_posts" href="#" />
