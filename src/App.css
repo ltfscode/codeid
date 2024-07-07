@@ -1,42 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color-white);
+}
+
 #root {
-  max-width: 1280px;
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+}
+
+
+
+/* Header start */
+
+
+
+
+.header {
+  background-color: var(--bg-color-header);
+  min-height: 100vh;
+  min-width: var(--width-header);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  padding: 32px 25px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-link {
+  font-family: "Bakbak One", sans-serif; 
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color-purple);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.menu {
+  text-decoration: none;
 }
 
-.card {
-  padding: 2em;
+.menu-list {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
-.read-the-docs {
-  color: #888;
+.menu-list__icon,
+.menu-list__icon-active {
+  cursor: pointer;
+  width: 1.5rem;
+}
+
+/* .menu-list__icon:hover,
+.menu-list__icon-active:hover {
+  
+} */
+
+.header-hr {
+  width: 60px;
+  border: 1px solid var(--text-color-gray);
+}
+
+.logout {
+  padding-bottom: 51px;
+}
+
+
+
+/* Header end */
+
+
+
+
+/* Page content start */
+
+
+.content {
+  margin-left: 126px;
+  min-height: 100vh;
+  min-width: calc(100vw - 126px);
+  background-color: var(--bg-color-content);
+}
+
+
+
+
+/* Page header start */
+
+
+
+.content-header {
+  margin: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-header__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+#search {
+  background-color: var(--bg-color-header);
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-radius: var(--border10);
+}
+
+#search::placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.content-header__user-icons {
+  width: 225px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header-icons {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  background-color: var(--bg-color-header);
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border10);
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-status {
+  position: absolute;
+  margin-top: -27px;
+  margin-right: -27px;
 }
